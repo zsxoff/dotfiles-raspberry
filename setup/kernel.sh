@@ -1,9 +1,9 @@
 #!/bin/bash
 
 kernel=(
+    "wd719x-firmware"
     "linux-aarch64-raspberrypi-bin"
     "raspberrypi-overlays"
-    "wd719x-firmware"
 )
 
 yay -S --aur ${kernel[@]}
