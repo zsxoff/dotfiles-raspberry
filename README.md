@@ -53,7 +53,7 @@ all scripts for installing packages use [yay](https://github.com/Jguer/yay). You
 cd /tmp
 git clone https://aur.archlinux.org/yay.git
 cd yay
-makepkg -si
+makepkg -si --noconfirm
 ```
 
 # next steps
