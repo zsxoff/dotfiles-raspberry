@@ -3,17 +3,22 @@
 -==: author: zsxoff <zsxoff@gmail.com>
 
 Dotfiles
-└──  services/            # setup and run some services
-│  ├────  cronie.sh       # setup cron daemon
-│  ├────  fake-hwclock.sh # fake hardware clock
-│  ├────  nmcli.sh        # network manager
-│  ├────  ntp.sh          # time sync
-│  └────  preload.sh      # preload files into the RAM
-└──  setup/               # base setup
-│  ├────  kernel.sh       # Linux kernel for the Raspberry Pi 3 models B/B+
-│  ├────  systools.sh     # some useful system tools
-│  └────  utils.sh        # some useful utils, like vim, wget and etc.
-└──  README.md            # this file
+---  config/              # some config files
+-  -----  _vimrc          # vim config
+---  services/            # setup and run some services
+-  -----  cronie.sh       # setup cron daemon
+-  -----  fake-hwclock.sh # fake hardware clock
+-  -----  nmcli.sh        # network manager
+-  -----  ntp.sh          # time sync
+-  -----  preload.sh      # preload files into the RAM
+---  setup/               # base setup
+-  -----  kernel.sh       # Linux kernel for the Raspberry Pi 3 models B/B+
+-  -----  systools.sh     # some useful system tools
+-  -----  utils.sh        # some useful utils, like vim, wget and etc.
+-  -----  loksh.sh        # ksh install script
+---  config.sh            # link files in config/ into current user's dir
+---  README.md            # this file
+---  LICENSE.md           # license
 ```
 
 # setup for absolutely clean system
