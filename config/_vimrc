@@ -1,0 +1,60 @@
+set nocompatible
+set exrc
+set secure
+filetype off
+
+" Encoding
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf8,cp1251,koi8r,cp866,ucs-2le
+set iminsert=0
+set iskeyword=@,a-z,A-Z,48-57,_,128-175,192-255
+set listchars=tab:»-,trail:·
+set termencoding=utf-8
+set termguicolors
+set updatetime=100
+
+set number
+setlocal list
+syntax on
+filetype plugin indent on
+
+set textwidth=80
+set ts=2
+set sw=4 sts=4 et
+let &colorcolumn=&textwidth
+
+set autochdir
+set autoindent
+set expandtab
+set foldcolumn=0
+set foldenable
+set foldlevel=0
+set foldmethod=syntax
+set history=64
+set hlsearch
+set ignorecase
+set incsearch
+set laststatus=2
+set linebreak
+set nobackup
+set noswapfile
+set nowrapscan
+set nowritebackup
+set shiftwidth=4
+set showcmd
+set smartindent
+set smarttab
+set softtabstop=4
+set splitbelow
+set splitright
+set tabstop=4
+set undofile
+set undolevels=128
+set undoreload=1000
+set wrap
+
+au BufNewFile,BufRead *.go set filetype=go
+au BufNewFile,BufRead *.rb set filetype=ruby
+au BufNewFile,BufRead *.hs set filetype=haskell
+au BufNewFile,BufRead *.py set filetype=python
