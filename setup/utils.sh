@@ -23,7 +23,6 @@ archives=(
 
 aur=(
     "dtrx"
-    "fswebcam"
 )
 
 yay -S --repo --noconfirm ${utils[@]} ${archives[@]}
