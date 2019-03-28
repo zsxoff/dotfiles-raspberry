@@ -64,7 +64,7 @@ makepkg -si --noconfirm
 # next steps
 Install all the scripts from the setup
 ```bash
-cd ./setup
+cd setup/
 ./kernel.sh
 ./systools.sh
 ./utils.sh
@@ -72,7 +72,7 @@ cd ./setup
 
 and services that you need from the directory calling services
 ```bash
-cd ./services
+cd services/
 ./cronie.sh
 ./fake-hwclock.sh
 ./nmcli.sh
