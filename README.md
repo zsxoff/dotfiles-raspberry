@@ -1,6 +1,6 @@
 ```
 -==: Dotfiles for Raspberry Pi 3 Model B with Arch Linux ARM AArch64
--==: author: zsxoff <zsxoff@gmail.com>
+-==: author: Konstantin Dobratulin <zsxoff@gmail.com>
 
 Dotfiles
 ---  config/              # some config files
@@ -49,16 +49,7 @@ pacman -S --noconfirm sudo
 
 install [git](https://wiki.archlinux.org/index.php/git) and [base-devel](https://www.archlinux.org/groups/x86_64/base-devel/) packages
 ```bash
-sudo pacman -S --noconfirm git base-devel
-```
-
-# before running scripts
-all scripts for installing packages use [yay](https://github.com/Jguer/yay). You need to install it
-```bash
-cd /tmp
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si --noconfirm
+sudo pacman -S --needed --noconfirm git base-devel
 ```
 
 # next steps
@@ -66,6 +57,7 @@ Install all the scripts from the setup
 ```bash
 cd setup/
 ./kernel.sh
+./loksh.sh
 ./systools.sh
 ./utils.sh
 ```
@@ -77,5 +69,4 @@ cd services/
 ./fake-hwclock.sh
 ./nmcli.sh
 ./ntp.sh
-./preload.sh
 ```
