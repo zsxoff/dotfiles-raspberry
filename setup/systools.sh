@@ -1,12 +1,9 @@
 #!/bin/bash
 
-systools=(
-    "acpid"
-    "dialog"
-    "fuse"
-    "highlight"
-    "psmisc"
-    "usbutils"
-)
-
-yay -S --repo --noconfirm ${systools[@]}
+yay -S --repo --noconfirm \
+acpid \
+dialog \
+fuse \
+highlight \
+psmisc \
+usbutils

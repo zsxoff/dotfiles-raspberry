@@ -1,8 +1,6 @@
 #!/bin/bash
 
-cd /tmp
-git clone https://github.com/dimkr/loksh
-cd ./loksh
+cd /tmp; git clone https://github.com/dimkr/loksh; cd ./loksh
 make; sudo make install
 
 echo "/usr/bin/ksh" | sudo tee --append /etc/shells
