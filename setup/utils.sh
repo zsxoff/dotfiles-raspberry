@@ -21,9 +21,4 @@ archives=(
     "xz"
 )
 
-aur=(
-    "dtrx"
-)
-
 yay -S --repo --noconfirm ${utils[@]} ${archives[@]}
-yay -S --aur --noconfirm ${aur[@]}
