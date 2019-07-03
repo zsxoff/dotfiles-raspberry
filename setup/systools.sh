@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --repo --noconfirm \
+sudo pacman -S --needed --noconfirm \
 acpid \
 dialog \
 fuse \

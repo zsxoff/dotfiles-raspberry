@@ -1,9 +1,8 @@
 #!/bin/bash
 
-yay -S --repo --noconfirm \
+sudo pacman -S --needed --noconfirm \
 aria2 \
 curl \
-htop \
 nano \
 tmux \
 unrar \

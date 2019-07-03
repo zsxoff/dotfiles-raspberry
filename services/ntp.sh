@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yay -S --repo --noconfirm ntp
+sudo pacman -S --needed --noconfirm ntp
 
 sudo unlink /etc/localtime
 sudo ln -s /usr/share/zoneinfo/Europe/Samara /etc/localtime
