@@ -4,7 +4,7 @@
 sudo pacman -S --needed --noconfirm git
 
 # Remove default packages.
-sudo pacman -R linux-aarch64 uboot-raspberrypi
+sudo pacman -R --noconfirm linux-aarch64 uboot-raspberrypi
 
 # Install linux-aarch64-raspberrypi-bin.
 cd /tmp
