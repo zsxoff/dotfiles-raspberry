@@ -9,5 +9,5 @@ sudo timedatectl set-local-rtc 0
 sudo timedatectl set-ntp true
 sudo ntpdate -s 2.ru.pool.ntp.org
 
-sudo systemctl enable systemd-timesyncd.service
-sudo systemctl start systemd-timesyncd.service
+sudo systemctl enable ntpd.service
+sudo systemctl start ntpd.service
